@@ -10,6 +10,17 @@ Course project for my 2D Graphics course. This is a 2D survival game which  incl
 - Sandstone
 - Clay
 
+### Ores ###
+#### Initial Game ####
+- Copper
+- Iron
+- Bauxite
+
+#### Hard-Mode ####
+- Platinum
+- Thorium
+- Uranium
+
 ### Liquid Tiles ###
 - Ocean
 - Water

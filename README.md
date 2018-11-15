@@ -28,3 +28,6 @@ Course project for my 2D Graphics course. This is a 2D survival game which  incl
 
 ### Special Tiles ###
 - Neutronium (Bottom of map)
+
+## Copyright ##
+All textures are protected by copyright Andrew Gapinski 2018

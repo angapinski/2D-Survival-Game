@@ -12,19 +12,26 @@ public class GenerateChunk : MonoBehaviour {
 
     public int width;
     public float heightMultiplier;
+    public int heightAddition;
     public float smoothness;
 
-    private int mapSeed;
+    [HideInInspector]
+    public int mapSeed;
 
 	void Start () {
         mapSeed = Random.Range(-10000, 10000);
         Generate();
     }
-	
-	void Generate () {
+
+    private void OnMouseDown()
+    {
+        Generate();
+    }
+
+    void Generate () {
         for(int i = 0; i < width; i++)
         {
-            int h = Mathf.RoundToInt(Mathf.PerlinNoise(1f * smoothness, i / 3f) * heightMultiplier);
+            int h = Mathf.RoundToInt(Mathf.PerlinNoise(mapSeed, (i + transform.position.x) / smoothness) * heightMultiplier) + heightAddition;
             
             for (int j = 0; j < h; j++)
             {
@@ -43,7 +50,9 @@ public class GenerateChunk : MonoBehaviour {
                 }
 
 
-                Instantiate(selectedBlock, new Vector3(i, j), Quaternion.identity);
+                GameObject newTile = Instantiate(selectedBlock, Vector3.zero, Quaternion.identity) as GameObject;
+                newTile.transform.parent = this.gameObject.transform;
+                newTile.transform.localPosition = new Vector3(i, j);
             }
         }
 		

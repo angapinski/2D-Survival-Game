@@ -14,7 +14,7 @@ Course project for my 2D Graphics course. This is a 2D survival game which  incl
 #### Initial Game ####
 - Copper
 - Iron
-- Bauxite
+- Gold
 
 #### Hard-Mode ####
 - Platinum

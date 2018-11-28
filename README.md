@@ -1,5 +1,5 @@
 # 2D-Survival-Game
-Course project for my 2D Graphics course. This is a 2D survival game which  includes procedural map generation.
+Course project for my 2D Graphics course. This is a 2D survival game which  includes procedural map generation. Currently a work in progress.
 
 ## Block Types ##
 ### Generic Tiles ###
@@ -14,7 +14,7 @@ Course project for my 2D Graphics course. This is a 2D survival game which  incl
 #### Initial Game ####
 - Copper
 - Iron
-- Bauxite
+- Gold
 
 #### Hard-Mode ####
 - Platinum

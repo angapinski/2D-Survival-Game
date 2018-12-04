@@ -65,7 +65,7 @@ public class Character : MonoBehaviour {
         
         Debug.Log(Vector2.Distance(new Vector2(transform.position.x, transform.position.y), hit.collider.transform.position));
 
-        if (hit.distance < .65f)
+        if (hit.distance < .66f)
         {
             isGrounded = true;
             Debug.Log("On Ground");

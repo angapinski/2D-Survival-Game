@@ -8,6 +8,8 @@ TagManager:
   - DirtBlock
   - DirtWithGrassBlock
   - IronBlock
+  - RightWall
+  - LeftWall
   layers:
   - Default
   - TransparentFX

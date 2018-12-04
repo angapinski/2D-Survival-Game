@@ -30,6 +30,7 @@ public class Character : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         Rigidbody2D r2D = GetComponent<Rigidbody2D>();
+
         r2D.velocity = new Vector2(Input.GetAxis("Horizontal") * currentSpeed, r2D.velocity.y);
         r2D.freezeRotation = true;
 
@@ -44,10 +45,12 @@ public class Character : MonoBehaviour {
 
         if (facingRight)
         {
+            hit = Physics2D.Raycast(new Vector2(transform.position.x -.5f, transform.position.y), Vector2.down);
             GetComponent<SpriteRenderer>().flipX = false;
         }
         else
         {
+            hit = Physics2D.Raycast(new Vector2(transform.position.x + .5f, transform.position.y), Vector2.down);
             GetComponent<SpriteRenderer>().flipX = true;
         }
 
@@ -59,7 +62,7 @@ public class Character : MonoBehaviour {
             }
         }
 
-        hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down);
+        
         Debug.Log(Vector2.Distance(new Vector2(transform.position.x, transform.position.y), hit.collider.transform.position));
 
         if (hit.distance < .65f)

@@ -56,7 +56,21 @@ MonoBehaviour:
     type: 2}
   dirtWithSurfaceBlock: {fileID: 0}
   stoneBlock: {fileID: 1902619818064846, guid: a61d6242e4c9fbc49b382ad9bf09381e, type: 2}
+  coalBlock: {fileID: 1660304916657770, guid: 1381c9620576f164ca1061de50585d7c, type: 2}
+  copperBlock: {fileID: 1841588796196352, guid: 6cf4c46fe64f4bd439a93c90634cdce4,
+    type: 2}
+  ironBlock: {fileID: 1349053550519346, guid: e887f36d9f5de4d4fbc9c43bedc9b708, type: 2}
+  goldBlock: {fileID: 1239481056818222, guid: b13483b72257e144886a09731a1e0a71, type: 2}
+  coalChance: 2
+  copperChance: 3
+  ironChance: 2
+  goldChance: 1
+  maxCoalGroups: 1
+  maxCopperGroups: 1
+  maxIronGroups: 1
+  maxGoldGroups: 1
   width: 25
   heightMultiplier: 10
   heightAddition: 0
   smoothness: 5
+  mapSeed: 0

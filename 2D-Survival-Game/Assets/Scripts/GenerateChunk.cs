@@ -9,6 +9,22 @@ public class GenerateChunk : MonoBehaviour {
     public GameObject dirtWithGrassBlock;
     public GameObject dirtWithSurfaceBlock;
     public GameObject stoneBlock;
+    public GameObject coalBlock;
+    public GameObject copperBlock;
+    public GameObject ironBlock;
+    public GameObject goldBlock;
+
+    //Ore Chances
+    public float coalChance = 2f;
+    public float copperChance = 3f;
+    public float ironChance = 2f;
+    public float goldChance = 1f;
+
+    //Max ore groups per chunk
+    public int maxCoalGroups = 1;
+    public int maxCopperGroups = 1;
+    public int maxIronGroups = 1;
+    public int maxGoldGroups = 1;
 
     public int width;
     public float heightMultiplier;
@@ -57,4 +73,9 @@ public class GenerateChunk : MonoBehaviour {
         }
 		
 	}
+
+    public void populateOres()
+    {
+
+    }
 }
